@@ -98,7 +98,7 @@ class PostRepositoryTest {
         assertThat(foundPostShares.size()).isEqualTo(1);
     }
 
-    @Test
+    /*@Test
     void shouldReturnListOfPosts_whenTagIsGiven() {
         User userJohn = userRepository.findByEmail(USER_JOHN.getEmail()).get();
         Tag targetTag = tagRepository.findAll().get(0);
@@ -106,5 +106,5 @@ class PostRepositoryTest {
         List<Post> foundPosts = postRepository.findPostsByPostTags(targetTag, PageRequest.of(page, size, Sort.by(Sort.Direction.DESC, "dateCreated")));
 
         assertThat(foundPosts.size()).isEqualTo(1);
-    }
+    }*/
 }
